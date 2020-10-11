@@ -48,7 +48,7 @@ class FormLogin extends Component {
             id='password'
             onChange={this.handleChange}
           />
-          <Link to='/conectar' className='submit'>
+          <Link to='/cadastro-perfil' className='submit'>
             Entrar
           </Link>
           {/* <button className='submit' type='submit'>

@@ -19,9 +19,10 @@ const Container = styled.ul`
       img {
         border-radius: 100%;
         border: 2px solid ${colors.brown};
+        cursor: pointer;
       }
     }
   }
-`
+`;
 
-export default Container
+export default Container;

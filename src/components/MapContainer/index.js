@@ -95,6 +95,7 @@ export class MapContainer extends Component {
           <Marker
             key={Math.random()}
             onClick={this.onMarkerClick}
+            pic={users.pic}
             name={users.name}
             address={users.address}
             techinique={users.technique}
@@ -159,5 +160,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyAiy_QubqO50nV1w1I_HNN9oEGdOzDxSUo',
+  apiKey: process.env.GOOGLE_API_KEY,
 })(MapContainer);

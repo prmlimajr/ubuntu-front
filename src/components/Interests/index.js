@@ -5,7 +5,12 @@ import Container from './styles';
 
 class Interests extends Component {
   state = {
-    interests: ['Jogar Bola', 'JiuJitsu', 'Malhar'],
+    interests: [
+      'Aprender a dirigir',
+      'Estudar para concurso',
+      'Ter uma alimentação saudável',
+      'Encontrar parceiros para participar de um Hackathon',
+    ],
     input: '',
   };
 

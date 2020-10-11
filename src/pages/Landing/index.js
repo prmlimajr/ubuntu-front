@@ -10,7 +10,7 @@ function Landing() {
     <Container>
       <div className='text'>
         <h1 className='title'>
-          <img className='logo' src={logo}></img>Conector
+          <img className='logo' src={logo}></img>Konnekto
         </h1>
         <p className='paragraph'>
           Uma plataforma para auxiliar na construção do seu

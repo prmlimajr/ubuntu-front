@@ -15,7 +15,7 @@ function Sidebar() {
       <Container>
         <div className='branding'>
           <img className='logo' src={logo} alt='logo' />
-          <h1 className='title'>Conector</h1>
+          <h1 className='title'>Konnekto</h1>
         </div>
         <ul className='nav-list'>
           <li className='nav-item'>
