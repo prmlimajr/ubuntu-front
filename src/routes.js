@@ -10,7 +10,7 @@ import Sidebar from './components/Sidebar';
 function Routes() {
   return (
     <Router>
-      <Sidebar /> 
+      <Sidebar />
       <Switch>
         <Route path='/' exact component={Landing} />
         <Route path='/cadastro' component={Register} />

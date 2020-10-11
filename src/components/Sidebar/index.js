@@ -8,32 +8,32 @@ import logo from '../../assets/logo.png';
 
 function Sidebar() {
   const pathname = window.location.pathname;
-  if(pathname === "/" || pathname === "/cadastro") {
-    return null
+  if (pathname === '/' || pathname === '/cadastro') {
+    return null;
   } else {
     return (
       <Container>
         <div className='branding'>
-          <img className='logo' src={logo} alt='logo'/>
-          <h1 className='title'>Ubuntu</h1>
+          <img className='logo' src={logo} alt='logo' />
+          <h1 className='title'>Conector</h1>
         </div>
         <ul className='nav-list'>
           <li className='nav-item'>
             <Link className='nav-link' to='/perfil'>
               <div className='nav-link-icon'>
-                <img className='profile' src={profileImg} alt='Foto de perfil' />
+                <img
+                  className='profile'
+                  src={profileImg}
+                  alt='Foto de perfil'
+                />
               </div>
-              <div className='nav-link-text'>
-                Meu Perfil
-              </div>
+              <div className='nav-link-text'>Meu Perfil</div>
             </Link>
             <Link className='nav-link' to='/conectar'>
               <div className='nav-link-icon'>
                 <FaGlobeAmericas className='icon' />
               </div>
-              <div className='nav-link-text'>
-                Procurar Conexões
-              </div>
+              <div className='nav-link-text'>Procurar Conexões</div>
             </Link>
           </li>
         </ul>

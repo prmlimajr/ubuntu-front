@@ -51,7 +51,7 @@ const Container = styled.div`
     }
 
     .title {
-      font-size: 60px;
+      font-size: 50px;
       color: ${colors.brown};
       margin: auto;
       opacity: 0;

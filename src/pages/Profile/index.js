@@ -13,10 +13,10 @@ function Profile() {
       <Posts />
       <div className='profile-bar'>
         <div className='profile'>
-          <img className='profile-img' src={profileImg} alt='Foto de perfil'/>
+          <img className='profile-img' src={profileImg} alt='Foto de perfil' />
           <div className='profile-text'>
             <h1 className='username'>Paulo Lima</h1>
-            <p className='status'>tecnica do momento</p>
+            <p className='status'>Técnica: 12</p>
           </div>
         </div>
         <Connections />
@@ -26,4 +26,4 @@ function Profile() {
   );
 }
 
-export default Profile
+export default Profile;

@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${colors.background};
     font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
   }
 
   button,
@@ -18,6 +19,6 @@ const GlobalStyle = createGlobalStyle`
   textarea {
     font-family: 'Ubuntu', sans-serif;
   }
-`
+`;
 
 export default GlobalStyle;

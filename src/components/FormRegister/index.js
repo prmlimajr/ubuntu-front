@@ -101,9 +101,12 @@ class FormRegister extends Component {
             id='confirmPassword'
             onChange={this.handleChange}
           />
-          <button className='submit' type='submit'>
+          <Link to='/' className='submit'>
             Cadastrar
-          </button>
+          </Link>
+          {/* <button className='submit' type='submit'>
+            Cadastrar
+          </button> */}
           <Link className='cancel' to='/'>
             Cancelar
           </Link>

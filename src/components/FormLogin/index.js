@@ -13,27 +13,7 @@ class FormLogin extends Component {
     },
   };
 
-  handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const { email, password } = this.state.form;
-    const data = { email, password };
-
-    if (!email || !password) {
-      alert('Favor preencher todos os dados.');
-    }
-
-    try {
-      const response = await Api.post('/session', { data });
-
-      console.log(response);
-      const { token, user } = response.data;
-
-      Api.defaults.headers.Authorization = `Bearer ${token}`;
-    } catch (err) {
-      alert('erro: ', err);
-    }
-  };
+  handleSubmit = async (e) => {};
 
   handleChange = (e) => {
     let form = this.state.form;
@@ -68,9 +48,12 @@ class FormLogin extends Component {
             id='password'
             onChange={this.handleChange}
           />
-          <button className='submit' type='submit'>
+          <Link to='/conectar' className='submit'>
             Entrar
-          </button>
+          </Link>
+          {/* <button className='submit' type='submit'>
+            Entrar
+          </button> */}
           <a className='link' href='#'>
             Esqueceu a senha?{/* Funcionalidade não implementada */}
           </a>

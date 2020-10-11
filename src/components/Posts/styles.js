@@ -8,6 +8,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  img {
+    border-radius: 50%;
+  }
   form {
     background-color: ${colors.backgroundLighter};
     border-radius: 16px;
@@ -69,8 +72,15 @@ const Container = styled.div`
     }
     .time {
       margin-left: auto;
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 12px;
+      color: blue;
+      cursor: pointer;
     }
   }
-`
+`;
 
-export default Container
+export default Container;
